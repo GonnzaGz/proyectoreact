@@ -1,0 +1,38 @@
+[
+  {
+    "categoria": "motor",
+    "categoriaId": 1
+  },
+  {
+    "categoria": "sobrealimentacion",
+    "categoriaId": 2
+  },
+  {
+    "categoria": "transmision",
+    "categoriaId": 3
+  },
+  {
+    "categoria": "suspension",
+    "categoriaId": 4
+  },
+  {
+    "categoria": "frenos",
+    "categoriaId": 5
+  },
+  {
+    "categoria": "llantas",
+    "categoriaId": 6
+  },
+  {
+    "categoria": "cubiertas",
+    "categoriaId": 7
+  },
+  {
+    "categoria": "escape",
+    "categoriaId": 8
+  },
+  {
+    "categoria": "bodykit",
+    "categoriaId": 9
+  }
+]
