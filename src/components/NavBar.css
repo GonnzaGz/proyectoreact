@@ -1,0 +1,15 @@
+.navbar {
+  background-color: rgb(63, 63, 63);
+  width: 78.9rem;
+  height: 7rem;
+  padding-top: 2rem;
+  z-index: 999;
+  text-decoration: none;
+}
+
+.navegadores {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  margin: 9rem;
+}

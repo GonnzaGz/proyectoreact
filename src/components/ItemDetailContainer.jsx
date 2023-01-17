@@ -16,7 +16,7 @@ export default function ItemDetailContainer() {
         db
           .filter((elm) => elm.id == id)
           .map((elm, index) => (
-            <div key={`${index}${elm.nombre}`}>
+            <div className="tarjetasExpandido" key={`${index}${elm.nombre}`}>
               <p>
                 {elm.nombre}-{elm.precio}-{elm.categoria}
               </p>

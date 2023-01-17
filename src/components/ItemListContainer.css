@@ -3,3 +3,24 @@
   font-size: 3rem;
   color: white;
 }
+
+.tarjetaProductoGral {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  padding-left: 5rem;
+}
+
+.imgProducto {
+  height: 7rem;
+  width: 9rem;
+  padding: 3rem;
+}
+
+.categoriaGral {
+  margin-right: 88%;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: black;
+}

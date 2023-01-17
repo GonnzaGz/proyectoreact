@@ -1,12 +1,19 @@
 import React from "react";
 import CartWidget from "./CartWidget";
+import "./NavBar.css";
 
 export default function Navbar() {
   return (
-    <div>
-      <a href="">Menu</a>
-      <a href="">Productos</a>
-      <a href="">Nosotros</a>
+    <div className="navbar">
+      <a className="navegadores" href="">
+        Menu
+      </a>
+      <a className="navegadores" href="">
+        Productos
+      </a>
+      <a className="navegadores" href="">
+        Nosotros
+      </a>
       <CartWidget />
     </div>
   );

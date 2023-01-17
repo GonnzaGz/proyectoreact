@@ -1,12 +1,17 @@
 .containerCarrito p {
   background-color: red;
-  width: 4rem;
-  height: 4rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 1.5rem;
-  margin-left: 65%;
-  margin-top: -10rem;
-  margin-bottom: 5rem;
+  margin-left: 97%;
+  margin-top: -2rem;
   z-index: 999;
   color: white;
-  font-size: 3rem;
+  font-size: 1rem;
+}
+
+.containerCarrito img {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 90%;
 }

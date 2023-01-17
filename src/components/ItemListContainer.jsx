@@ -38,14 +38,15 @@ export default function ItemListContainer(props) {
       ) : (
         <Fragment>
           {categoriaDb.map((elm, index) => (
-            <div key={`${index}${elm.categoria}`}>
+            <div className="categoriaGral" key={`${index}${elm.categoria}`}>
               <NavLink to={`/category/${elm.categoriaId}`}>
                 {elm.categoria}
               </NavLink>
             </div>
           ))}
           {db.map((elm, index) => (
-            <div key={`${index}${elm.nombre}`}>
+            <div className="tarjetaProductoGral" key={`${index}${elm.nombre}`}>
+              <img className="imgProducto" src={elm.imagen} />
               <p>{elm.nombre}</p>
               <p>{elm.categoria}</p>
               <NavLink to={`/item/${elm.id}`}>Ver detalle</NavLink>
