@@ -17,14 +17,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<NavLayout />}>
-            <Route
-              path="/"
-              element={<ItemListContainer greeting="desdeItemListContainer " />}
-            />
-            <Route
-              path="/category/:id"
-              element={<ItemListContainer greeting="desdeItemListContainer " />}
-            />
+            <Route path="/" element={<ItemListContainer />} />
+            <Route path="/category/:id" element={<ItemListContainer />} />
             <Route path="/item/:id" element={<ItemDetailContainer />} />
             <Route path="/cart" />
             <Route path="/checkout" />

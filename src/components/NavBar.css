@@ -1,15 +1,68 @@
 .navbar {
-  background-color: rgb(63, 63, 63);
+  background-color: rgb(31, 31, 31);
   width: 78.9rem;
-  height: 7rem;
-  padding-top: 2rem;
+  height: 8.5rem;
   z-index: 999;
   text-decoration: none;
+  letter-spacing: 0.2rem;
+  border-bottom: 1.5px solid #ff004e;
 }
 
 .navegadores {
-  text-decoration: none;
   color: white;
   font-size: 2rem;
-  margin: 9rem;
+  display: flex;
+  justify-content: center;
+}
+
+.navegadores img {
+  width: 75px;
+  height: 50px;
+  margin-top: -5rem;
+}
+
+.logo {
+  width: 175px;
+  height: 75px;
+  padding: 1rem;
+  display: flex;
+  justify-content: start;
+}
+
+.navbar2 {
+  background-color: rgb(19, 70, 179);
+  width: 65rem;
+  height: 2.41rem;
+  margin-top: -2.55rem;
+  z-index: 1000;
+  border-radius: 0.1rem;
+  border: 1px solid #ff004e;
+}
+
+.navegacion {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3rem;
+}
+
+.navegacion p {
+  margin: auto;
+  color: white;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 0.1rem;
+  filter: drop-shadow(1.5px 1.5px 1.5px black);
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+}
+
+.navegacion img {
+  margin: auto;
+  height: 21px;
+  width: 24px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 0.5rem;
+  filter: drop-shadow(1.5px 1.5px 1.5px black);
 }

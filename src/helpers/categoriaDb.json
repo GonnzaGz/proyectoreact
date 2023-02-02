@@ -1,38 +1,42 @@
 [
   {
-    "categoria": "motor",
+    "categoria": "General",
+    "categoriaId": 0
+  },
+  {
+    "categoria": "Motor",
     "categoriaId": 1
   },
   {
-    "categoria": "sobrealimentacion",
+    "categoria": "Sobrealimentación",
     "categoriaId": 2
   },
   {
-    "categoria": "transmision",
+    "categoria": "Transmisión",
     "categoriaId": 3
   },
   {
-    "categoria": "suspension",
+    "categoria": "Suspensión",
     "categoriaId": 4
   },
   {
-    "categoria": "frenos",
+    "categoria": "Frenos",
     "categoriaId": 5
   },
   {
-    "categoria": "llantas",
+    "categoria": "Llantas",
     "categoriaId": 6
   },
   {
-    "categoria": "cubiertas",
+    "categoria": "Cubiertas",
     "categoriaId": 7
   },
   {
-    "categoria": "escape",
+    "categoria": "Escape",
     "categoriaId": 8
   },
   {
-    "categoria": "bodykit",
+    "categoria": "Bodykit",
     "categoriaId": 9
   }
 ]

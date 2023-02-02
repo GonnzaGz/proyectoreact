@@ -1,0 +1,60 @@
+.tarjetasExpandido {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.1rem;
+}
+
+.imgProductoDetalle {
+  width: 30rem;
+  height: 20rem;
+  display: flex;
+  justify-content: start;
+  padding-top: 2rem;
+}
+
+.nombreDetalle {
+  margin-left: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+  background-color: rgb(234, 0, 0);
+  border-radius: 0.1rem;
+  color: white;
+  font-weight: bolder;
+}
+
+.precioDetalle {
+  margin-left: center;
+  padding-top: 0.5rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.categoriaDetalle {
+  margin-left: center;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  color: rgb(234, 0, 0);
+  font-weight: bolder;
+}
+
+.descripcionTitDetalle {
+  margin-left: center;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: start;
+  font-size: 1.5rem;
+  background-color: rgb(72, 72, 72);
+  border-radius: 0.1rem;
+  color: white;
+}
+
+.descripcionDetalle {
+  margin-left: center;
+  padding-top: 0rem;
+  font-size: 1rem;
+  width: 40rem;
+}
+
+.panel2 {
+}

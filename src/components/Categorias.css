@@ -1,0 +1,21 @@
+.categoriaGral {
+  margin-top: 0.2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.cat {
+  background-color: rgb(244, 244, 244);
+  border-radius: 0.1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.estilo2 {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  border-radius: 0.1rem;
+}

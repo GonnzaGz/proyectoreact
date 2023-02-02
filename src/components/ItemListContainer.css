@@ -4,23 +4,25 @@
   color: white;
 }
 
-.tarjetaProductoGral {
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  font-size: 1.1rem;
-  padding-left: 5rem;
+.color {
+  border: 0.1rem rgb(218, 218, 218) solid;
+  background-color: rgb(244, 244, 244);
 }
 
-.imgProducto {
-  height: 7rem;
-  width: 9rem;
-  padding: 3rem;
+.padre {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0 auto;
+  background-color: rgb(252, 252, 252);
+  letter-spacing: 0.1rem;
 }
 
-.categoriaGral {
-  margin-right: 88%;
-  margin-top: 2rem;
-  text-decoration: none;
-  color: black;
+.padre2 {
+  border-radius: 0.1rem;
+}
+
+.padre3 {
+  padding-right: 0.5rem;
+  margin: auto;
 }
