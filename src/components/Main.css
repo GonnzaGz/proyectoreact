@@ -1,0 +1,45 @@
+.mainPadre {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  gap: 5.5rem;
+  background-color: rgb(252, 252, 252);
+}
+
+.publicidad img {
+  margin-top: 0.2rem;
+  width: 200px;
+  height: 371px;
+  margin: auto;
+  margin-right: 0rem;
+}
+
+.cartelera img {
+  margin: auto;
+  margin-top: 1.8rem;
+  width: 890px;
+  height: 340px;
+  margin-right: 0rem;
+}
+
+.frase1 {
+  letter-spacing: 0.6rem;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin-top: -13rem;
+}
+
+.frase2 {
+  font-size: 2rem;
+  color: #ff004e;
+  text-align: center;
+}
+
+.frase3 {
+  letter-spacing: 0.5rem;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}

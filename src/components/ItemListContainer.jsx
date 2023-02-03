@@ -18,42 +18,39 @@ export default function ItemListContainer(props) {
   }, [id]);
   console.log(id);
   return (
-    <div className="padre">
-      {category ? (
-        <Fragment>
-          <div>
-            <Main />
-          </div>
-          <div className="padre2">
-            {categoriaDb.map((elm, index) => (
-              <Categorias key={index} categorias={elm} />
-            ))}
-          </div>
-          <div className="padre3">
-            {id == 0
-              ? db.map((elm, index) => <Card key={index} productos={elm} />)
-              : db
-                  .filter((elm) => elm.categoriaId == id)
-                  .map((elm, index) => <Card key={index} productos={elm} />)}
-          </div>
-        </Fragment>
-      ) : (
-        <Fragment>
-          <div>
-            <Main />
-          </div>
-          <div className="padre2">
-            {categoriaDb.map((elm, index) => (
-              <Categorias key={index} categorias={elm} />
-            ))}
-          </div>
-          <div className="padre3">
-            {db.map((elm, index) => (
-              <Card key={index} productos={elm} />
-            ))}
-          </div>
-        </Fragment>
-      )}
-    </div>
+    <Fragment>
+      <Main />
+      <div className="padre">
+        {category ? (
+          <Fragment>
+            <div className="padre2">
+              {categoriaDb.map((elm, index) => (
+                <Categorias key={index} categorias={elm} />
+              ))}
+            </div>
+            <div className="padre3">
+              {id == 0
+                ? db.map((elm, index) => <Card key={index} productos={elm} />)
+                : db
+                    .filter((elm) => elm.categoriaId == id)
+                    .map((elm, index) => <Card key={index} productos={elm} />)}
+            </div>
+          </Fragment>
+        ) : (
+          <Fragment>
+            <div className="padre2">
+              {categoriaDb.map((elm, index) => (
+                <Categorias key={index} categorias={elm} />
+              ))}
+            </div>
+            <div className="padre3">
+              {db.map((elm, index) => (
+                <Card key={index} productos={elm} />
+              ))}
+            </div>
+          </Fragment>
+        )}
+      </div>
+    </Fragment>
   );
 }

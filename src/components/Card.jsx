@@ -7,7 +7,7 @@ export default function Card(props) {
   return (
     <div className="tarjetaProductoGral" key={`${index}${productos.nombre}`}>
       <img className="imgProducto" src={productos.imagen} />
-      <p>{productos.nombre}</p>
+      <p className="productoLetra">{productos.nombre}</p>
       <p className="catLetra">Categoría: {productos.categoria}</p>
       <NavLink className={"estilo detalle"} to={`/item/${productos.id}`}>
         Ver detalle

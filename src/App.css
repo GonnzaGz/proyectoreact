@@ -1,5 +1,6 @@
-html {
+body {
   font-family: "Roboto Condensed", sans-serif;
+  background-color: rgb(252, 252, 252);
 }
 
 .App {

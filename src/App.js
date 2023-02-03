@@ -3,6 +3,7 @@ import Navbar from "./components/NavBar";
 import ItemListContainer from "./components/ItemListContainer";
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 import ItemDetailContainer from "./components/ItemDetailContainer";
+import Main from "./components/Main";
 
 const NavLayout = () => (
   <div>

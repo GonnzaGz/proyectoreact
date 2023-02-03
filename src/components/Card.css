@@ -13,11 +13,16 @@
 
 .imgProducto {
   height: 10rem;
-  width: 13rem;
+  width: 12.5rem;
 }
 
 .catLetra {
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+.productoLetra {
+  font-weight: bolder;
+  font-size: 1.05rem;
 }
 
 .estilo {
@@ -32,4 +37,5 @@
   color: white;
   border-radius: 0.1rem;
   padding: 0.5rem;
+  font-weight: bolder;
 }
