@@ -5,6 +5,7 @@ import categoriaDb from "./../helpers/categoriaDb.json";
 import db from "./../helpers/db.json";
 import Card from "./Card";
 import Categorias from "./Categorias";
+import Main from "./Main";
 
 export default function ItemListContainer(props) {
   const [category, setCategory] = useState(false);
@@ -20,6 +21,9 @@ export default function ItemListContainer(props) {
     <div className="padre">
       {category ? (
         <Fragment>
+          <div>
+            <Main />
+          </div>
           <div className="padre2">
             {categoriaDb.map((elm, index) => (
               <Categorias key={index} categorias={elm} />
@@ -35,6 +39,9 @@ export default function ItemListContainer(props) {
         </Fragment>
       ) : (
         <Fragment>
+          <div>
+            <Main />
+          </div>
           <div className="padre2">
             {categoriaDb.map((elm, index) => (
               <Categorias key={index} categorias={elm} />
