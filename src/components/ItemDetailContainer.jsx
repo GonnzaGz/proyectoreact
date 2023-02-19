@@ -2,19 +2,32 @@ import db from "./../helpers/db.json";
 import { React, useState, useEffect, Fragment } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import "./ItemDetailContainer.css";
+import { collection, getDocs } from "firebase/firestore";
+import { db1 } from "./../firebase/config";
 
 export default function ItemDetailContainer() {
   const [item, setItem] = useState(false);
+  const productosRef = collection(db1, "productos");
+  const [productos, setProductos] = useState([]);
   const { id } = useParams();
   useEffect(() => {
     if (id) {
       setItem(true);
     }
   }, [id]);
+
+  useEffect(() => {
+    getDocs(productosRef).then((resp) => {
+      const pr = resp.docs.map((doc) => doc.data());
+      setProductos(pr);
+    });
+  }, []);
+  console.log(productos);
+
   return (
     <div>
       {item ? (
-        db
+        productos
           .filter((elm) => elm.id == id)
           .map((elm, index) => (
             <div className="tarjetasExpandido" key={`${index}${elm.nombre}`}>
