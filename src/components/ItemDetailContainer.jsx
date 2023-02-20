@@ -4,6 +4,7 @@ import { NavLink, useParams } from "react-router-dom";
 import "./ItemDetailContainer.css";
 import { collection, getDocs } from "firebase/firestore";
 import { db1 } from "./../firebase/config";
+import ItemCount from "./ItemCount";
 
 export default function ItemDetailContainer() {
   const [item, setItem] = useState(false);
@@ -45,6 +46,7 @@ export default function ItemDetailContainer() {
                   corrupti adipisci, animi odit natus labore molestiae odio
                   ratione? Necessitatibus blanditiis aliquam magni debitis.
                 </p>
+                <ItemCount max={elm.stock} />
               </div>
             </div>
           ))
