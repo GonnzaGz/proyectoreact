@@ -3,7 +3,7 @@ import Navbar from "./components/NavBar";
 import ItemListContainer from "./components/ItemListContainer";
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 import ItemDetailContainer from "./components/ItemDetailContainer";
-import Main from "./components/Main";
+import Contacto from "./components/Contacto";
 
 const NavLayout = () => (
   <div>
@@ -23,6 +23,7 @@ function App() {
             <Route path="/item/:id" element={<ItemDetailContainer />} />
             <Route path="/cart" />
             <Route path="/checkout" />
+            <Route path="/contacto" element={<Contacto />} />
           </Route>
         </Routes>
       </BrowserRouter>

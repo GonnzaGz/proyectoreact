@@ -8,6 +8,7 @@ import ItemCount from "./ItemCount";
 
 export default function ItemDetailContainer() {
   const [item, setItem] = useState(false);
+  const [cantidad, setCantidad] = useState(1);
   const productosRef = collection(db1, "productos");
   const [productos, setProductos] = useState([]);
   const { id } = useParams();
@@ -24,6 +25,12 @@ export default function ItemDetailContainer() {
     });
   }, []);
   console.log(productos);
+
+  const handleAgregar = () => {
+    console.log({
+      id,
+    });
+  };
 
   return (
     <div>
@@ -46,7 +53,12 @@ export default function ItemDetailContainer() {
                   corrupti adipisci, animi odit natus labore molestiae odio
                   ratione? Necessitatibus blanditiis aliquam magni debitis.
                 </p>
-                <ItemCount max={elm.stock} />
+                <ItemCount
+                  cantidad={cantidad}
+                  setCantidad={setCantidad}
+                  max={elm.stock}
+                  agregar={handleAgregar}
+                />
               </div>
             </div>
           ))

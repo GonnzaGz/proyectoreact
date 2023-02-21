@@ -1,9 +1,7 @@
 import { useState } from "react";
 import "./ItemCount.css";
 
-const ItemCount = ({ max }) => {
-  const [cantidad, setCantidad] = useState(1);
-
+const ItemCount = ({ cantidad, setCantidad, max, agregar }) => {
   const handleRestar = () => {
     cantidad > 1 && setCantidad(cantidad - 1);
   };
@@ -20,6 +18,10 @@ const ItemCount = ({ max }) => {
       <span className="cont">{cantidad}</span>
       <button onClick={handleSumar} className="btn">
         +
+      </button>
+      <br />
+      <button className="btn" onClick={agregar}>
+        Agregar
       </button>
     </div>
   );
