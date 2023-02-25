@@ -8,6 +8,12 @@ body {
   justify-content: center;
 }
 
+.msjCompra {
+  color: black;
+  margin: 5rem;
+  font-weight: bolder;
+}
+
 .form {
   display: flex;
   flex-direction: column;
