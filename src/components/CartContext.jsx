@@ -12,11 +12,35 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState(init);
 
   const agregarAlCarrito = (item) => {
-    setCart([...cart, item]);
+    const index = cart.findIndex((cartItem) => cartItem.id === item.id);
+    if (index !== -1) {
+      const updatedCart = [...cart];
+      if (item.cantidad) {
+        updatedCart[index].cantidad += item.cantidad;
+      } else {
+        updatedCart[index].cantidad++;
+      }
+      setCart(updatedCart);
+    } else {
+      if (item.cantidad) {
+        setCart([...cart, { ...item }]);
+      } else {
+        setCart([...cart, { ...item, cantidad: 1 }]);
+      }
+    }
   };
 
   const removerItem = (id) => {
-    setCart(cart.filter((item) => item.id !== id));
+    const index = cart.findIndex((item) => item.id === id);
+    if (index !== -1) {
+      const updatedCart = [...cart];
+      if (updatedCart[index].cantidad > 1) {
+        updatedCart[index].cantidad--;
+      } else {
+        updatedCart.splice(index, 1);
+      }
+      setCart(updatedCart);
+    }
   };
 
   const isInCart = (id) => {
